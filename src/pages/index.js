@@ -81,7 +81,7 @@ const IndexPage = () => (
         </p>
       </HomeSection>
 
-      {/* <HomeSection anchor="projects" title="Projects" blowWidth={true}
+      <HomeSection anchor="projects" title="Projects" blowWidth={true}
         // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
       >
         <Projects/>
@@ -90,9 +90,9 @@ const IndexPage = () => (
       <HomeSection anchor="speaking" title="Speaking" // description="I try to be as engaged as possible with the community, always learning from others and  trying to share some ideas too."
       >
         <Speaking />
-      </HomeSection> */}
+      </HomeSection>
 
-      {/* <HomeSection anchor="currently" title="Currently" >
+      <HomeSection anchor="currently" title="Currently" >
         <p className="pretty-bullet">
           Listening to <b>Lorem</b>, <b>Ipsum</b>.
         </p>
@@ -100,7 +100,7 @@ const IndexPage = () => (
         <p className="pretty-bullet">
           Reading <b>Lorem</b>, <b>Ipsum</b> and <b>Dolor</b>.
         </p>
-      </HomeSection> */}
+      </HomeSection>
 
       <HomeSection anchor="elsewhere" title="Elsewhere" >
         <div className="f5 ttu fw6">

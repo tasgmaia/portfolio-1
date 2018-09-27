@@ -16,7 +16,7 @@ class Project extends React.Component {
         
         return (
             <a href="#" className="link bg-light-gray h5 mv4 w-100 dim db pa2 shadow-4">
-                <h3>{title}</h3>
+                {/* <h3>{title}</h3> */}
             </a> 
         )
     }

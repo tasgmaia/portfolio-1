@@ -14,14 +14,20 @@ const Header = () => (
     </Link> */}
 
     <div className="f7 dn db-ns">
-      <a className="link dark-gray mh4 ttu fw6 selected-tab" href="#about" >
-      {/* <a className="link dark-gray mh4 ttu fw6" href="#about" >  */}
+      <a className="link dark-gray ml4 ttu fw6 selected-tab" href="#about" >
+      {/* <a className="link dark-gray ml4 ttu fw6" href="#about" >  */}
         About
       </a>
-      <a className="link gray mh4 ttu fw6" href="#work" >
+      <a className="link gray ml4 ttu fw6" href="#work" >
         Work
       </a>
-      <a className="link gray mh4 ttu fw6" href="#elsewhere" >
+      <a className="link gray ml4 ttu fw6" href="#projects" >
+        Projects
+      </a>
+      <a className="link gray ml4 ttu fw6" href="#speaking" >
+        Speaking
+      </a>
+      <a className="link gray ml4 ttu fw6" href="#elsewhere" >
         Elsewhere
       </a>
     </div>
