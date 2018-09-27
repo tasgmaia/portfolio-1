@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div className="parallax">
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -46,7 +46,7 @@ const Layout = ({ children }) => (
         <div className="ph4-m ph6-ns ph2 bg-near-white">
           <Footer/>
         </div>
-      </>
+      </div>
     )}
   />
 )

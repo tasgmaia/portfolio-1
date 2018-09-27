@@ -11,12 +11,12 @@ import selfie from '../images/selfie.png'
 
 const IndexPage = () => (
   <Layout>
-    <div className="flex flex-row-ns flex-column">
+    <div className="flex flex-row-ns flex-column ">
       <div className="w-40-ns">
         <img
           src={selfie}
           alt="Silhouette of a man standing at the top of a hill with silhoutes of mountains in the background. I like mountains because they offer great insights about life in general. Like: we're never quite sure of how tall are the mountains just over the ones that are nearest to us, all we have to do is keep climbing and taking care of our own pair of legs."
-          className="absolute left-0 top-3 w-80 w-100-ns relative-ns"
+          className="parallax__layer--back absolute left-0 top-3 w-80 w-100-ns relative-ns"
         />
 
         <h1 className="f1-ns f2 fw9 dark-gray absolute lh-solid top-0 left-3 mt7-ns ml7-ns ml4 mt6 mw6-ns">
