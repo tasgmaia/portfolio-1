@@ -1,25 +1,40 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-const Projects = () => (
-    <div>
-        <Project title="Lorem ipsum"/>
-        <Project title="Lorem ipsum"/>
-        <Project title="Lorem ipsum"/>
-        <Project title="Lorem ipsum"/>
-        
-    </div>
-)
-
-class Project extends React.Component {
+class Projects extends React.Component {
     render() {
-        const {title} = this.props;
-        
+        const posts = this.props.posts;
+
         return (
-            <a href="#" className="link bg-light-gray h5 mv4 w-100 dim db pa2 shadow-4">
-                {/* <h3>{title}</h3> */}
-            </a> 
+            posts.map(({ node }) => {
+                return (
+                    <Project node={node}/>
+                )
+            })
         )
     }
 }
 
-export default Projects
+class Project extends React.Component {
+    render() {
+        const node = this.props.node;
+        const title = node.frontmatter.title || node.fields.slug;
+
+        return (
+            <Link
+                className="link near-black bg-white mv4 w-100 dim db pa4 shadow-4"
+                to={node.fields.slug}
+            >
+                <h3 className="f4 fw5">
+                    {title}
+                </h3>
+                <div className="f6 gray">
+                    {node.frontmatter.date}
+                </div>
+                {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
+            </Link>
+        )
+    }
+}
+
+export default Projects;

@@ -9,25 +9,21 @@ const Header = () => (
       </Link>
     </h1>
 
-    {/* <Link className="link gray mh4 ttu fw5" to="/page-2/">
-      About
-    </Link> */}
-
     <div className="f7 dn db-ns">
-      <a className="link dark-gray ml4 ttu fw6 selected-tab" href="#about" >
-      {/* <a className="link dark-gray ml4 ttu fw6" href="#about" >  */}
-        About
+      <a className="link dim dark-gray ml4 ttu fw6 selected-tab" href="#about" >
+        {/* <a className="link dim dark-gray ml4 ttu fw6" href="#about" >  */}
+        About Me
       </a>
-      <a className="link gray ml4 ttu fw6" href="#work" >
+      <a className="link dim gray ml4 ttu fw6" href="#work" >
         Work
       </a>
-      <a className="link gray ml4 ttu fw6" href="#projects" >
+      <a className="link dim gray ml4 ttu fw6" href="#projects" >
         Projects
       </a>
-      <a className="link gray ml4 ttu fw6" href="#speaking" >
+      <a className="link dim gray ml4 ttu fw6" href="#speaking" >
         Speaking
       </a>
-      <a className="link gray ml4 ttu fw6" href="#elsewhere" >
+      <a className="link dim gray ml4 ttu fw6" href="#elsewhere" >
         Elsewhere
       </a>
     </div>

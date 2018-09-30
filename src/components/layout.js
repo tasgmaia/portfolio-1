@@ -35,11 +35,11 @@ const Layout = ({ children }) => (
         </Helmet>
 
         {/* <div className="mh4-m mh6-ns mh3 fixed top-0 left-0 right-0 bg-fafafa z-1"> */}
-        <div className="mh4-m mh6-ns mh3">
+        <div className="mh4-m mh4-ns mh3">
           <Header siteTitle={data.site.siteMetadata.title} />
         </div>
 
-        <div className="mh4-m mh6-ns mh3 mt4 mb6 lh-copy">
+        <div className="mh4-m mh4-ns mh3 mt4 mb6 lh-copy">
           {children}
         </div>
 

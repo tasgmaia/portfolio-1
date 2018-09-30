@@ -4,13 +4,13 @@ const Speaking = () => (
     <div>
       <Talk
         title="A experiência de usuário da mobilidade urbana - Cidades melhores para pedalar e viver"
-        context="Interaction Latin America - 2018 (proposta)"
+        context="Interaction Latin America (proposta), 2018"
         link="https://docs.google.com/presentation/d/1oXXcIGezvJleuqwEpXEjieuFVvWEYMyXmhYCCkGNp-o/edit#slide=id.g3ea9d9667f_0_143"
       />
 
       <Talk
         title="Rage, rage against the dying of the Design System - Morte e vida de um sistema para empoderar um ecossistema."
-        context="Interaction Latin America - 2018 (proposta)"
+        context="Interaction Latin America (proposta), 2018"
         link="https://drive.google.com/open?id=10VxokY3c1onxm67WUD_flPh5tlxyydBy"
       />
 
@@ -21,8 +21,14 @@ const Speaking = () => (
       />
 
       <Talk
+        title="Sprint de Criação de Multimídias Livres"
+        context="Fórum Internacional Software Livre, 2016"
+        link="https://musica-libre.org/sprint_multimedia_2016_1"
+      />
+
+      <Talk
         title="O primeiro web app PWA para ciclistas"
-        context="Google IO Extended - 2015"
+        context="Google IO Extended, 2015"
         link="https://docs.google.com/presentation/d/18DyziybC2Benf43OMAd5T7611QULd9oWA1L60rzvrsM/edit#slide=id.p"
       />
 
@@ -32,13 +38,13 @@ const Speaking = () => (
         link="https://docs.google.com/presentation/d/1RnbQ5beTuvtUFzk6KX3kJXrF25i2WN-ZMcXbhlelktw/edit#slide=id.p"
       />
 
-      <Talk
+      {/* <Talk
         title="Podcasts"
         context="Isobar Lightning Talks, 2017"
         link="https://docs.google.com/presentation/d/1hzKk7USBEVX9m8HlrZD5rRb8sp-VXWFYuyebHe5kzJ8/edit?usp=sharing"
-      />
+      /> */}
 
-      <Talk
+      {/* <Talk
         title="Slow TV"
         context="Isobar Lightning Talks, 2016"
         link="https://www.youtube.com/playlist?list=PLEQfAlS3xFFXkBT0lAzsiHvX1OKuH1qv5"
@@ -48,7 +54,7 @@ const Speaking = () => (
         title="Fallacies"
         context="Isobar Lightning Talks, 2016"
         link="https://docs.google.com/presentation/d/1989zLiju0njGpa4oTJz3J80kEIODHYTTTfmP6UYX35M/edit#slide=id.p"
-      />
+      /> */}
 
       <Talk
         title="O que aprendi com as Artes Marciais"

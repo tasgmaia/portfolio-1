@@ -73,8 +73,7 @@ body {
   background: -webkit-linear-gradient(#f5852d, #f5882d);
 }
 
-
-@media screen and (min-width: 48em) {
+/* @media screen and (min-width: 48em) {
   .parallax {
     perspective: 1px;
     transform-style: preserve-3d;
@@ -95,4 +94,4 @@ body {
   .parallax__layer--back {
     transform: translateZ(-0.5px) scale(1.5) translateX(-25%) 
   }
-}
+} */

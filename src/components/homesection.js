@@ -12,7 +12,7 @@ class HomeSection extends React.Component {
                 </div>
 
                 <div className="w-30-ns">
-                    <h2 className="f4 fw7 dark-gray">{title}</h2>
+                    <h2 className="f3 fw7 dark-gray">{title}</h2>
 
                     {
                         description &&
