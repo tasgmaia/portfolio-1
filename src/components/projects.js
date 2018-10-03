@@ -18,18 +18,25 @@ class Projects extends React.Component {
 class Project extends React.Component {
     render() {
         const node = this.props.node;
-        const title = node.frontmatter.title || node.fields.slug;
 
         return (
             <Link
-                className="link near-black bg-white mv4 w-100 dim db pa4 shadow-4"
+                className="link near-black mv5 db dim"
                 to={node.fields.slug}
             >
-                <h3 className="f4 fw5">
-                    {title}
-                </h3>
-                <div className="f6 gray">
-                    {node.frontmatter.date}
+                <div className="bg-gray w-100 db pa5"></div>
+                { node.frontmatter.title &&
+                    <h3 className="f5 fw7 mt3 mb0">
+                        {node.frontmatter.title}
+                    </h3>
+                }
+                { node.frontmatter.description &&
+                    <div className="f6 dark-gray">
+                        {node.frontmatter.description}
+                    </div>
+                }
+                <div className="f5 mv2 gray">
+                    {node.frontmatter.date} {node.frontmatter.date2 && `— ${node.frontmatter.date2}`}
                 </div>
                 {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
             </Link>

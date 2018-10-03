@@ -11,6 +11,11 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const readingTime = post.fields.readingTime; 
 
+    post.html = post.html.replace(/<h1>/g,`<h1 class='f1 fw1 mt6 mb4'>`);
+    post.html = post.html.replace(/<h2>/g,`<h2 class='f3 fw9 mt5 mb3'>`); 
+    post.html = post.html.replace(/<hr>/g,`<hr class="mv6 bb b--black-10">`); 
+    // post.html = post.html.replace(/<img class="/g,`<img class="mv6 `);
+
     return (
       <Layout location={this.props.location}>
         <Helmet
@@ -47,18 +52,28 @@ class BlogPostTemplate extends React.Component {
               <div>
                 {readingTime.text}
               </div> 
+              {
+                post.frontmatter.tags && 
+                  <div className="mt2">
+                    {post.frontmatter.tags.map(tag => (
+                      <span className="br2 bg-near-white dark-gray f7 mr2 pa1">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+              }
             </div>
           </div>
         </div>
         
         {/* Content */}
         <div className="flex flex-row-ns flex-column">
-          <div className="w-40-ns">
+          <div className="w-20-ns">
           </div>
   
-          <div className="w-40-ns">
+          <div className="w-60-ns">
             <div 
-              className="f4 lh-copy"
+              className="f4 near-black lh-copy"
               dangerouslySetInnerHTML={{ __html: post.html }}
             /> 
           </div>
@@ -109,6 +124,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM, YYYY")
+        date2(formatString: "MMMM, YYYY")
+        tags
       }
       fields {
         readingTime {

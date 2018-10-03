@@ -179,10 +179,13 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
-          }
+          } 
           frontmatter {
             date(formatString: "YYYY")
+            date2(formatString: "YYYY")
             title
+            description
+            tags
           }
         }
       }

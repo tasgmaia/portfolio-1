@@ -1,6 +1,6 @@
 ---
 date: "2007"
-date2: "now"
+date2: "2018" 
 title: "Photography"
 ---
 
